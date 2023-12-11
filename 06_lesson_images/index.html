@@ -22,6 +22,9 @@
                 <li>
                     <a href="#vacation">Planning a Vacation</a>
                 </li>
+                <li>
+                    <a href="#contact">Contact Me</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -56,11 +59,61 @@
                 <aside>
                     <details>
                         <summary>
-                            Guess the number of hours I code per day
+                            Guess the <mark>number of hours</mark> I code per day
                         </summary>
-                        <p>I start at 8 am and i write code for 3 hour every morning</p>
+                        <p>I start at <time datetime="08:00">8 am</time> and i write code for <time
+                                datetime="PT3H">3</time> hour every morning</p>
                     </details>
                 </aside>
+                <br>
+                <table>
+                    <caption>My Daily Schedule</caption>
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th id="time" scope="col">Time</th>
+                            <th scope="col">Activity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Morning</th>
+                            <td>
+                                <time datetime="08:00"> 8 am</time> - <time datetime="11:00"> 11 am</time>
+                            </td>
+                            <td>Write Code</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Break</th>
+                            <td>
+                                <time datetime="11:00"> 11 am</time> - <time datetime="12:00"> 12 pm</time>
+                            </td>
+                            <td>Eat lunch</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Afternoon</th>
+                            <td>
+                                <time datetime="12:00"> 12 pm</time> - <time datetime="17:00"> 5 pm</time>
+                            </td>
+                            <td>Study for Other Courses</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Evening</th>
+                            <td rowspan="2">All other times</td>
+                            <td>Free time</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Night</th>
+                            <td>Sleep</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">And that's I do every day, 5 days a week. Just eat, sleep, code ..and
+                                recharge!</td>
+                        </tr>
+                    </tfoot>
+                </table>
             </section>
         </article>
         <hr>
@@ -71,48 +124,64 @@
                     a getway.</em></p>
             <p>I live in <abbr title="Kansas">KS</abbr> so i want visit a beach.</p>
 
+            <section>
+                <h3>Places i'd like to visit</h3>
+                <ul>
+                    <li>
+                        <p>I've heard good things about the Caribbean</p>
+                        <figure>
+                            <img src="img/caribbean.jpg" alt="caribbean beach" width="400" height="225" loading="lazy">
+                            <figcaption>
+                                Caribbean Beach Getaway
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <p>I've heard good thins about going here:</p>
+                        <address>
+                            Margaritaville Island Reserve Riviera Cancún <br>
+                            Bahia Petempich Puerto Morelos, Mexico<br>
+                            Colonia Morelos, México 77580
+                        </address>
+                        <figure>
+                            <img src="img/vacation.jpg" alt="" width="400" height="267" loading="lazy">
+                            <figcaption>
+                                Vacation on cancún, mexico.
+                            </figcaption>
+                        </figure>
 
-            <h3>Places i'd like to visit</h3>
-            <ul>
-                <li>
-                    <p>I've heard good things about the Caribbean</p>
-                    <figure>
-                        <img src="img/caribbean.jpg" alt="caribbean beach" width="400" height="225" loading="lazy">
-                        <figcaption>
-                            Caribbean Beach Getaway
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <p>I've heard good thins about going here:</p>
-                    <address>
-                        Margaritaville Island Reserve Riviera Cancún <br>
-                        Bahia Petempich Puerto Morelos, Mexico<br>
-                        Colonia Morelos, México 77580
-                    </address>
-                    <figure>
-                        <img src="img/vacation.jpg" alt="" width="400" height="267" loading="lazy">
-                        <figcaption>
-                            Vacation on cancún, mexico.
-                        </figcaption>
-                    </figure>
+                    </li>
+                </ul>
+            </section>
 
-                </li>
-            </ul>
-            <!--- This is A comment add more places-->
-            <h3>Places i want to avoid</h3>
-            <dl>
-                <dt>North Pole</dt>
-                <dd>
-                    I hear this is <strong>cold</strong>!
-                </dd>
+            <section>
+                <!--- This is A comment add more places-->
+                <h3>Places i want to avoid</h3>
+                <dl>
+                    <dt>North Pole</dt>
+                    <dd>
+                        I hear this is <strong>cold</strong>!
+                    </dd>
 
-                <dt>South Pole</dt>
-                <dd>This is also cold.</dd>
+                    <dt>South Pole</dt>
+                    <dd>This is also cold.</dd>
 
-                <dt>Mountain Tops</dt>
-                <dd>These are also cold.</dd>
-            </dl>
+                    <dt>Mountain Tops</dt>
+                    <dd>These are also cold.</dd>
+                </dl>
+            </section>
+        </article>
+
+        <hr>
+
+        <article id="contact">
+            <h2>Contact Me</h2>
+            <p>I'd really like to hear from you!</p>
+            <form action="https://httpbin.org/get" method="get">
+                <label for="firstName">First Name:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="Write your name" autocomplete="off"
+                    required>
+            </form>
         </article>
     </main>
 
